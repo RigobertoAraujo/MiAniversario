@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/528-rojo-liso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img{
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 5px;
+}
+
+@media (max-width:800px){
+    .column {
+        flex: 100%;
+    }
+}
+
+@media (max-width:600px){
+    .column {
+        flex: 100%;
+    }
+}
